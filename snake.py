@@ -5,6 +5,9 @@ class Snake:
     def __init__(self):
         self.initial_coordinate = [(0, 0), (-20, 0), (-40, 0)]
         self.snake = []
+        self.create_snake()
+
+    def create_snake(self):
         for position in self.initial_coordinate:
             new_turtle = Turtle("square")
             new_turtle.color("white")
