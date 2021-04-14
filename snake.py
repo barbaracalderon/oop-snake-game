@@ -16,11 +16,18 @@ class Snake:
 
     def create_snake(self):
         for position in INITIAL_COORDINATE:
-            new_segment = Turtle("square")
-            new_segment.color("white")
-            new_segment.penup()
-            new_segment.goto(position)
-            self.snake.append(new_segment)
+            self.add_segment(position)
+
+    def add_segment(self, position):
+        new_segment = Turtle("square")
+        new_segment.penup()
+        new_segment.goto(position)
+        new_segment.color("white")
+        self.snake.append(new_segment)
+
+    def grow(self):
+        # It adds a segment to the snake.
+        self.add_segment(self.snake[-1].position())
 
     # Look inside move for the tip below.
     # range(start=len(snake)-1, end=0, step=-1)
