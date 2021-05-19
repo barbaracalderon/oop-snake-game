@@ -19,10 +19,6 @@ class Scoreboard(Turtle):
             self.high_score = self.score
         self.score = 0                      # reset to zero so it counts again next round
 
-    # def game_over(self):
-    #     self.goto(x=0, y=0)
-    #     self.write('GAME OVER', True, align=ALIGNMENT, font=FONT)
-
     def update_scoreboard(self):
         self.clear()
         self.write(f'Score: {self.score} ', True, align=ALIGNMENT, font=FONT)
