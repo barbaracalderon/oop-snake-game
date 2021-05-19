@@ -17,12 +17,14 @@ class Scoreboard(Turtle):
     def reset(self):
         if self.score > self.high_score:
             self.high_score = self.score
-        self.score = 0                      # reset to zero so it counts again next round
+        self.score = 0
+        self.update_scoreboard()
 
     def update_scoreboard(self):
         self.clear()
+        self.goto(0, 280)
         self.write(f'Score: {self.score} High Score: {self.high_score} ', True, align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
-        self.update_scoreboard()
         self.score += 1
+        self.update_scoreboard()

@@ -30,6 +30,13 @@ class Snake:
         # It adds a segment to the snake.
         self.add_segment(self.snake[-1].position())
 
+    def reset(self):
+        for seg in self.snake:
+            seg.goto(0, 700)
+        self.snake.clear()
+        self.create_snake()
+        self.head = self.snake[0]
+
     # Look inside move for the tip below.
     # range(start=len(snake)-1, end=0, step=-1)
     def move(self):
