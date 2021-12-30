@@ -1,3 +1,5 @@
+_This README.md file is in English and Portuguese. // Esse arquivo README.md está em Inglês e Português._
+
 # Snake Game from old Mobiles | Python
 
 ⚠️ _This was done as I followed up Angela Yu's Python Bootcamp tutorial on the Snake Game. You can find the course [on Udemy here](https://www.udemy.com/course/100-days-of-code/)._ ⚠️
